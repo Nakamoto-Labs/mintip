@@ -1,0 +1,16 @@
+[profile.default]
+src = 'src'
+out = 'out'
+libs = ['lib']
+remappings = [
+    '@openzeppelin/=node_modules/@openzeppelin/',
+    '@story-protocol/=node_modules/@story-protocol/',
+]
+
+[rpc_endpoints]
+sepolia = "${SEPOLIA_RPC_URL}"
+mumbai = "${MUMBAI_RPC_URL}"
+
+[etherscan]
+sepolia = { key = "${ETHERSCAN_API_KEY}" }
+polygonscan = { key = "${POLYGONSCAN_API_KEY}" }
